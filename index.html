@@ -6,73 +6,102 @@
   <title>Saafiya Mudanaldesai | Data Analyst</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
       color: #333;
+      scroll-behavior: smooth;
     }
     header {
-      background: #4b6cb7;
       background: linear-gradient(to right, #4b6cb7, #182848);
       color: white;
-      padding: 2rem;
+      padding: 4rem 2rem;
       text-align: center;
+      animation: fadeInDown 1.2s ease;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
     }
     section {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 1.2s ease;
     }
     h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #4b6cb7;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #4b6cb7;
+      margin-top: 0.5rem;
+      border-radius: 2px;
     }
     .project {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
     .project h3 {
-      margin-top: 0;
+      color: #182848;
+      margin-bottom: 0.5rem;
+    }
+    .project p {
+      line-height: 1.6;
     }
     .contact {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #222;
-      color: white;
     }
     a {
       color: #4b6cb7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #182848;
+      color: white;
+      margin-top: 2rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Saafiya Mudanaldesai</h1>
-    <p>Entry-Level Data Analyst | Python | SQL | Power BI | Open to UAE Relocation</p>
+    <p>Data Analyst | Python | SQL | Power BI | Open to Global Opportunities</p>
   </header>
 
   <section>
     <h2>About Me</h2>
     <p>
-      I'm currently pursuing an MSc in Data Analytics from Dublin City University. With experience in Python, SQL, Power BI,
-      and hands-on projects in machine learning and full-stack web development, I'm eager to contribute to data-driven
-      decision-making in the UAE.
+      I am an MSc Data Analytics student at Dublin City University with a strong foundation in Python, SQL, and data visualization tools. With hands-on experience in real-world projects, I bring technical expertise and a passion for turning data into actionable insights. I'm currently open to job and internship opportunities globally, including UAE, Europe, and remote roles.
     </p>
   </section>
 
@@ -81,34 +110,34 @@
 
     <div class="project">
       <h3>Product Category Classification</h3>
-      <p>Used Python, TF-IDF, and XGBoost to classify over 700 e-commerce products. Achieved 72% accuracy while optimizing memory usage in Google Colab.</p>
+      <p>Built an ML pipeline using Python, TF-IDF, and XGBoost to classify 700+ e-commerce products. Achieved 72% accuracy and optimized memory usage for large-scale datasets.</p>
     </div>
 
     <div class="project">
       <h3>Surrogacy Management App</h3>
-      <p>Developed a Django-based full-stack app with MySQL backend. Includes appointment scheduling, role-based login, and email notifications.</p>
+      <p>Developed a Django-based full-stack application with MySQL backend. Features include appointment scheduling, secure role-based login, and real-time email notifications.</p>
     </div>
 
     <div class="project">
-      <h3>Retail Analytics Simulation – Accenture Forage</h3>
-      <p>Simulated a real-world business case using Excel and PowerPoint. Built dashboards and delivered strategic insights.</p>
+      <h3>Retail Analytics – Accenture Forage</h3>
+      <p>Simulated a real business case using Excel dashboards. Presented data-driven strategies and KPIs to improve retail performance.</p>
     </div>
 
   </section>
 
   <section>
     <h2>Resume</h2>
-    <p><a href="Saafiya_Mudanaldesai_CV_29_UAE.pdf" target="_blank">View my resume (PDF)</a></p>
+    <p><a href="Saafiya_Mudanaldesai_CV_29_UAE.pdf" target="_blank">Download My Resume (PDF)</a></p>
   </section>
 
   <section class="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
     <p>Email: <a href="mailto:saafiyad1529@gmail.com">saafiyad1529@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/saafiya-mudanaldesai29" target="_blank">Saafiya Mudanaldesai</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/saafiya-mudanaldesai29" target="_blank">linkedin.com/in/saafiya-mudanaldesai29</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Saafiya Mudanaldesai</p>
+    <p>&copy; 2025 Saafiya Mudanaldesai | Portfolio Site</p>
   </footer>
 </body>
 </html>
